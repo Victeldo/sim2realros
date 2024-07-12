@@ -1,0 +1,5 @@
+<!-- my_subscriber.launch -->
+
+<launch>
+  <node pkg="test_subscriber_pkg" type="subscriber.py" name="array_subscriber" output="screen" />
+</launch>
