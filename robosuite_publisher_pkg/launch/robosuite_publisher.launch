@@ -1,0 +1,6 @@
+<!-- my_publisher.launch -->
+
+<launch>
+  <!-- Start a new terminal for the node -->
+  <node pkg="robosuite_publisher_pkg" type="robosuite_publisher.py" name="robosuite_publisher" output="screen" />
+</launch>
