@@ -1,5 +1,8 @@
 <!-- my_subscriber.launch -->
 
 <launch>
-  <node pkg="test_subscriber_pkg" type="subscriber.py" name="array_subscriber" output="screen" />
+  <arg name="robot_name" default="my_gen3"/>
+
+  <!-- <node pkg="test_subscriber_pkg" type="subscriber.py" name="array_subscriber" output="screen" /> -->
+  <node pkg="test_subscriber_pkg" type="subscriber.py" name="pose_subscriber" ns="$(arg robot_name)" output="screen" />
 </launch>

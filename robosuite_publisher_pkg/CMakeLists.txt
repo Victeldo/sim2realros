@@ -208,7 +208,7 @@ include_directories(
 # )
 # Make sure the script is executable
 
-catkin_install_python(PROGRAMS src/robosuite_publisher.py
+catkin_install_python(PROGRAMS src/robosuite_publisher.py src/robosuite_teleop_publisher.py
                       DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
 
 #############
