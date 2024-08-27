@@ -1,0 +1,8 @@
+<!-- my_publisher.launch -->
+
+<launch>
+  <arg name="robot_name" default="my_gen3"/>
+  
+  <!-- Start a new terminal for the node -->
+  <node pkg="robosuite_publisher_pkg" type="robosuite_teleop_publisher.py" name="robosuite_publisher" ns="$(arg robot_name)" output="screen" />
+</launch>
